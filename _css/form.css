@@ -1,0 +1,15 @@
+@charset "UTD-8";
+
+form {
+    width: 700px;
+    margin: auto;
+}
+input {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+input:hover {
+    background-color: #dddddd;
+}
