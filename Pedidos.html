@@ -90,21 +90,24 @@
     <hr width="220%" size="1" color="black">
 </section>
 
+
+
 <aside id="lateral">
+    <form method="POST" oninput="calc_Queijo();calc_Frango();calc_Camarao();calc_Carne(); calc_APagar()">
     <section id="pedCarne">
-    <form method="post" oninput="calc_Carne();">
+    
     <fieldset id="carne">
         <br>
-        <p>Preço Unitário: R$ <input type="text" name="tPrecoCarne" id="cPrecoCarne" size="6" maxlength="8" value="  21.15" readonly /></p>
+        <p>Preço Unitário: R$ <input type="text" name="tPrecoCarne" id="cPrecoCarne" size="6" maxlength="8" value="21.15" readonly /></p>
         <p>Quantidade: <input type="number" name="tQtdeCarne" id="cQtdeCarne" min="0" max="20" /></p>
         <p>A Pagar: R$ <input type="text" name="tTotalCarne" id="cTotalCarne" size="13" maxlength="10" readonly /></p>
         <br>
     </fieldset>
-    </form>
+   
     </section>
 
     <section id="pedCamarao">
-    <form method="post" oninput="calc_Camarao();">
+    
     <fieldset id="camarao">
         <br>
          <p>Preço Unitário: R$ <input type="text" name="tPrecoCamarao" id="cPrecoCamarao" size="6" maxlength="8" value="  26.55" readonly /></p>
@@ -112,11 +115,11 @@
          <p>A Pagar: R$ <input type="text" name="tTotalCamarao" id="cTotalCamarao" size="13" maxlength="10" readonly /> </p>
          <br>
     </fieldset>
-    </form>
+   
     </section>
 
     <section id="pedFrango">
-    <form method="post" oninput="calc_Frango();">
+   
     <fieldset id="frango">
         <br>
         <p>Preço Unitário: R$ <input type="text" name="tPrecoFrango" id="cPrecoFrango" size="6" maxlength="8" value="  17.95" readonly /></p>
@@ -124,34 +127,31 @@
         <p>A Pagar: R$ <input type="text" name="tTotalFrango" id="cTotalFrango" size="13" maxlength="10" readonly /> </p>
         <br>
 	</fieldset>
-    </form>
+    
     </section>	
 	
 	<section id="pedQueijo">
-    <form method="post" oninput="calc_Queijo();">
+    
     <fieldset id="queijo">
         <br>
         <p>Preço Unitário: R$ <input type="text" name="tPrecoQueijo" id="cPrecoQueijo" size="6" maxlength="8" value="  18.90" readonly /></p>
         <p>Quantidade: <input type="number" name="tQtdeQueijo" id="cQtdeQueijo" min="0" max="20"/></p>
-        <p>A Pagar: R$ <input type="text" name="tTotalQueijo" id="cTotalQueijo" size="13" maxlength="10" readonly /> </p>
+        <p>A Pagar: R$ <input type="text" name="tTotalQueijo" id="cTotalQueijo" size="13" maxlength="10" readonly="true" /> </p>
         <br>
 	</fieldset>
-    </form>
+    
     </section>
 
 	<section id="aPagar">
-    <form method="post" oninput="calc_APagar();">
+    
     <fieldset id="total">
         <br>
-        <p>Total a Pagar : R$ <input type="text" name="tTotalAPagar" id="cTotalAPagar" size="6" maxlength="8" readonly /> </p>
+        <p>Total a Pagar : R$ <input type="text"  name="tTotalAPagar" id="cTotalAPagar" size="6" maxlength="8" value=""   readonly /> </p>
         <br>
 	</fieldset>
-    </form>
+
     </section>
-
-
-
-
+</form>
 </aside>
 
 </body>

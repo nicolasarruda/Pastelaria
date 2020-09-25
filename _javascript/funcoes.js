@@ -1,3 +1,5 @@
+var totCarne, totCamarao, totFrango, totQueijo, totAPagar;
+
 function calc_Carne(){
     var totCarne = parseFloat(document.getElementById('cQtdeCarne').value) * parseFloat(document.getElementById('cPrecoCarne').value);
     document.getElementById('cTotalCarne').value = totCarne;
@@ -19,6 +21,7 @@ function calc_Queijo(){
 }
 
 function calc_APagar(){
-    var totAPagar = parseFloat(document.getElementById('cTotalCarne').value) + parseFloat(document.getElementById('cTotalCamarao').value) + parseFloat(document.getElementById('cTotalFrango').value) + parseFloat(document.getElementById('cTotalQueijo').value);
-    document.getElementById('cTotalAPagar').value = totAPagar;
+     var total = document.getElementById('cTotalQueijo').value + document.getElementById('cTotalFrango').value + document.getElementById('cTotalCamarao').value + document.getElementById('cTotalCarne').value;
+     document.getElementById('cTotalAPagar').value = total;
+     
 }
