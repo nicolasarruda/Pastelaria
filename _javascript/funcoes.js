@@ -21,7 +21,7 @@ function calc_Queijo(){
 }
 
 function calc_APagar(){
-     var total = document.getElementById('cTotalQueijo').value + document.getElementById('cTotalFrango').value + document.getElementById('cTotalCamarao').value + document.getElementById('cTotalCarne').value;
+     var total = parseFloat(document.getElementById('cTotalQueijo').value) + parseFloat(document.getElementById('cTotalFrango').value) + parseFloat(document.getElementById('cTotalCamarao').value) + parseFloat(document.getElementById('cTotalCarne').value);
      document.getElementById('cTotalAPagar').value = total;
      
 }
