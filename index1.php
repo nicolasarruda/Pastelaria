@@ -14,14 +14,13 @@
     <nav id="menu">
         <ul>
             <li><a href="index.php"> Home </a></li>
-            <li><a href="index.php"> Sobre nós </a></li>
             <li><a href="contato.php">Contato</a></li>
             <li><a href="cardapio.php">Cardapio</a></li>
         </ul>
     </nav>
 </header>
 <table id = "listapastel" style = "text-align: center;">
-    <form name = "quack" method="POST" action="compra1.php">
+    <form name = "quack">
     <?php $link = "pasteis.xml";
     $xml = simplexml_load_file($link) -> pasteis;
     foreach($xml -> sabores as $aula){
@@ -46,12 +45,10 @@ echo '<input type="number" name="'.$aula -> codigo2.'" min="0" max="20" value ="
 echo "</tr>";
 }
     ?>
-
+</form>
 </table>
-<br>
-<br>
 <center>Preço Final:<br>
-
+    <form name = "precofinal">
 <input type="number" name="final" min="0"  value ="0" readonly/>
 <input type="submit" name="submeter" value = "Finalizar"/>
 </form>

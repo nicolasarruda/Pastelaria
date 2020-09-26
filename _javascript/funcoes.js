@@ -25,5 +25,4 @@ function calc_Preco(){
     document.quack.inf1.value = final6.toFixed(2);
     var finalz = final1+final2+final3+final4+final5+final6;
     document.quack.final.value = finalz.toFixed(2);
-
 }
