@@ -1,27 +1,23 @@
-var totCarne, totCamarao, totFrango, totQueijo, totAPagar;
+function calc_Preco(){
+    var preco1 = 8;
+    var preco2 = 12;
+    var preco3 = 8;
+    var preco4 = 10;
+    var preco5 = 8;
+    var preco6 = 16;
+    var quantia1 = document.quack.carne.value;
+    document.quack.carne1.value = quantia1*preco1;
+    var quantia2 = document.quack.camarao.value;
+    document.quack.camarao1.value = quantia2*preco2;
+    var quantia3 = document.quack.frango.value;
+    document.quack.frango1.value = quantia3*preco3;
+    var quantia4 = document.quack.queijo.value;
+    document.quack.queijo1.value = quantia4*preco4;
+    var quantia5 = document.quack.cala.value;
+    document.quack.cala1.value = quantia5*preco5;
+    var quantia6 = document.quack.inf.value;
+    document.quack.inf1.value = quantia6*preco6;
+    var final = quantia1*preco1 + quantia2*preco2 + quantia3*preco3 + quantia4*preco4 + quantia5*preco5 + quantia6*preco6;
+    document.precofinal.final.value = final;
 
-function calc_Carne(){
-    var totCarne = parseFloat(document.getElementById('cQtdeCarne').value) * parseFloat(document.getElementById('cPrecoCarne').value);
-    document.getElementById('cTotalCarne').value = totCarne;
-}
-
-function calc_Camarao(){
-    var totCamarao = parseFloat(document.getElementById('cQtdeCamarao').value) * parseFloat(document.getElementById('cPrecoCamarao').value);
-    document.getElementById('cTotalCamarao').value = totCamarao;
-}
-
-function calc_Frango(){
-    var totFrango = parseFloat(document.getElementById('cQtdeFrango').value) * parseFloat(document.getElementById('cPrecoFrango').value);
-    document.getElementById('cTotalFrango').value = totFrango;
-}
-
-function calc_Queijo(){
-    var totQueijo = parseFloat(document.getElementById('cQtdeQueijo').value) * parseFloat(document.getElementById('cPrecoQueijo').value);
-    document.getElementById('cTotalQueijo').value = totQueijo;
-}
-
-function calc_APagar(){
-     var total = parseFloat(document.getElementById('cTotalQueijo').value) + parseFloat(document.getElementById('cTotalFrango').value) + parseFloat(document.getElementById('cTotalCamarao').value) + parseFloat(document.getElementById('cTotalCarne').value);
-     document.getElementById('cTotalAPagar').value = total;
-     
 }
