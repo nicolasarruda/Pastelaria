@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<array>
+	<pasteis>
+		<sabores>
+
+			<nome> CARnELAPSO Especial </nome>
+			<preco> 8,00 </preco>
+			<codigo>carne</codigo>
+			<codigo2>carne1</codigo2>
+			<codigo3>012</codigo3>
+			<imagem>_imagens\carne.jpg</imagem>
+			<ingredientes>Carne Moída,
+				Cebola,
+				Azeitonas Verdes,
+				Tomate,
+				Bacon
+        </ingredientes>
+
+		</sabores>
+		<sabores>
+
+			<nome> CALAPSOmARÃO </nome>
+			<preco> 12,00 </preco>
+			<codigo>camarao</codigo>
+			<codigo2>camarao1</codigo2>
+			<codigo3>013</codigo3>
+			<imagem>_imagens\camarao.jpg</imagem>
+			<ingredientes>Camarão 7 Barbas,
+				Ricota,
+				Molho Especial,
+				Tomate
+        </ingredientes>
+
+		</sabores>
+		<sabores>
+
+			<nome> FRAngLAPSO </nome>
+			<preco> 8,00 </preco>
+			<codigo>frango</codigo>
+			<codigo2>frango1</codigo2>
+			<codigo3>014</codigo3>
+			<imagem>_imagens\frango.jpg</imagem>
+			<ingredientes>Frango Desfiado,
+				Purê de Batata,
+				Catupiry,
+				Maionese,
+				Mostarda
+        </ingredientes>
+
+		</sabores>
+		<sabores>
+
+			<nome> RELAPchEESE </nome>
+			<preco> 10,00 </preco>
+			<codigo>queijo</codigo>
+			<codigo2>queijo1</codigo2>
+			<codigo3>015</codigo3>
+			<imagem>_imagens\queijo.jpg</imagem>
+			<ingredientes>Queijo Muçarela,
+				Queijo Gorgonzola,
+				Queijo Branco,
+				Catupiry
+        </ingredientes>
+
+		</sabores>
+		<sabores>
+
+			<nome> CaLaBreSaRELApsA </nome>
+			<preco> 8,00 </preco>
+			<codigo>cala</codigo>
+			<codigo2>cala1</codigo2>
+			<codigo3>016</codigo3>
+			<imagem>_imagens\calabresa.jpg</imagem>
+			<ingredientes>Calabresa Picada,
+				Bacon,
+				Queijo,
+				Catupiry,
+				Mais Calabresa,
+				Muita Calabresa
+        </ingredientes>
+
+		</sabores>
+		<sabores>
+
+			<nome> ReLApSOINfaRtO </nome>
+			<preco> 16,00 </preco>
+			<codigo>inf</codigo>
+			<codigo2>inf1</codigo2>
+			<codigo3>017</codigo3>
+			<imagem>_imagens\especial.jpg</imagem>
+			<ingredientes>Carne Moída,
+				Cebola,
+				Azeitonas Verdes,
+				Tomate,
+				Bacon,
+				Calabresa Picada,
+				Bacon,
+				Queijo,
+				Catupiry,
+				Mais Calabresa,
+				Muita Calabresa,
+				Queijo Muçarela,
+				Queijo Gorgonzola,
+				Queijo Branco,
+				Catupiry,
+				Frango Desfiado,
+				Purê de Batata
+        </ingredientes>
+
+		</sabores>
+
+	</pasteis>
+</array>
