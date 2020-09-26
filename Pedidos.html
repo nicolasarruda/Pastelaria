@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pastéis Relapsos</title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
+    <script language="JavaScript" src="_javascript/funcoes.js"></script>
+
+</head>
+<body>
+    <center>
+<header id="cabecalho">
+
+    <img id="icone1" src="_imagens/joes.jpg"/>
+    <img id="icone2" src="_imagens/relapsos.jpg"/>
+   
+    <nav id="menu">
+        <ul>
+        
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="Missao.html"> Missão </a></li>
+            <li><a href="Cardapio.html"> Cardápio </a></li>
+            <li><a href="contato.html"> Contato </a></li>
+        </ul>
+    </nav>
+
+</header>
+    </center>
+<section id="corpo">
+	<h1>CARnELAPSO Especial : R$ 21,15.</h1>
+    <figure class="foto-legenda">
+        <img src="_imagens/carne.jpg"/>
+        <figcaption>
+            <h2>O Pastel com Tempero da Vovó.</h2>
+            <ul>
+                <li>Carne Moída</li>
+                <li>Cebola</li>
+                <li>Azeitonas Verdes</li>
+                <li>Tomate</li>
+                <li>Bacon</li>
+                
+            </ul>
+        </figcaption>
+    </figure>
+<br>
+    <hr width="220%" size="1" color="black">
+<br>
+    <h1>CALAPSOmARÃO : R$ 26,55.</h1>
+    <figure class="foto-legenda">
+        <img src="_imagens/camarão.jpg"/>
+        <figcaption>
+            <h2>Sabor de Praia.</h2>
+            <ul>
+                <li>Camarão 7 Barbas</li>
+                <li>Ricota</li>
+				<li>Molho Especial</li>
+                <li>Tomate</li>
+             </ul>
+        </figcaption>
+    </figure>
+<br>
+    <hr width="220%" size="1" color="black">
+<br>
+    <h1>FRAngLAPSO : R$ 17,95.</h1>
+    <figure class="foto-legenda">
+        <img src="_imagens/frango.jpg"/>
+        <figcaption>
+            <h2>Você nunca comeu igual.</h2>
+            <ul>
+                <li>Frango Desfiado</li>
+                <li>Purê de Batata</li>
+                <li>Catupiry</li>
+                <li>Maionese</li>
+                <li>Mostarda</li>
+            </ul>
+        </figcaption>
+    </figure>
+<br>
+    <hr width="220%" size="1" color="black">
+<br>
+    <h1>RELAPchEESE : R$ 18,90.</h1>
+    <figure class="foto-legenda">
+        <img src="_imagens/queijo.jpg"/>
+        <figcaption>
+            <h2>O Sabor dos Deuses.</h2>
+            <ul>
+                <li>Queijo Muçarela</li>
+                <li>Queijo Gorgonzola</li>
+                <li>Queijo Branco</li>
+                <li>Catupiry</li>
+             </ul>
+        </figcaption>
+    </figure>
+    <br>
+    <hr width="220%" size="1" color="black">
+</section>
+
+
+
+<aside id="lateral">
+    <form method="POST" oninput="calc_Queijo();calc_Frango();calc_Camarao();calc_Carne(); calc_APagar()">
+    <section id="pedCarne">
+    
+    <fieldset id="carne">
+        <br>
+        <p>Preço Unitário: R$ <input type="text" name="tPrecoCarne" id="cPrecoCarne" size="6" maxlength="8" value="21.15" readonly /></p>
+        <p>Quantidade: <input type="number" name="tQtdeCarne" value="0" id="cQtdeCarne" min="0" max="20" /></p>
+        <p>A Pagar: R$ <input type="text" name="tTotalCarne" value="0" id="cTotalCarne" size="13" maxlength="10" readonly /></p>
+        <br>
+    </fieldset>
+   
+    </section>
+
+    <section id="pedCamarao">
+    
+    <fieldset id="camarao">
+        <br>
+         <p>Preço Unitário: R$ <input type="text" name="tPrecoCamarao" id="cPrecoCamarao" size="6" maxlength="8" value="  26.55" readonly /></p>
+         <p>Quantidade: <input type="number" name="tQtdeCamarao" value="0" id="cQtdeCamarao" min="0" max="20"/></p>
+         <p>A Pagar: R$ <input type="text" name="tTotalCamarao" value="0" id="cTotalCamarao" size="13" maxlength="10" readonly /> </p>
+         <br>
+    </fieldset>
+   
+    </section>
+
+    <section id="pedFrango">
+   
+    <fieldset id="frango">
+        <br>
+        <p>Preço Unitário: R$ <input type="text" name="tPrecoFrango" id="cPrecoFrango" size="6" maxlength="8" value="  17.95" readonly /></p>
+        <p>Quantidade: <input type="number" name="tQtdeFrango" value="0" id="cQtdeFrango" min="0" max="20"/></p>
+        <p>A Pagar: R$ <input type="text" name="tTotalFrango" value="0" id="cTotalFrango" size="13" maxlength="10" readonly /> </p>
+        <br>
+	</fieldset>
+    
+    </section>	
+	
+	<section id="pedQueijo">
+    
+    <fieldset id="queijo">
+        <br>
+        <p>Preço Unitário: R$ <input type="text" name="tPrecoQueijo" id="cPrecoQueijo" size="6" maxlength="8" value="  18.90" readonly /></p>
+        <p>Quantidade: <input type="number" name="tQtdeQueijo" value="0" id="cQtdeQueijo" min="0" max="20"/></p>
+        <p>A Pagar: R$ <input type="text" name="tTotalQueijo" value="0" id="cTotalQueijo" size="13" maxlength="10" readonly="true" /> </p>
+        <br>
+	</fieldset>
+    
+    </section>
+
+	<section id="aPagar">
+    
+    <fieldset id="total">
+        <br>
+        <p>Total a Pagar : <br> R$ <input type="text"  name="tTotalAPagar" id="cTotalAPagar" size="20" maxlength="8" value="" readonly /> </p>
+        <p><input type="submit" name="gerarPedido" id="gerarPedido" value="Gerar pedido"></p>
+        <br>
+	</fieldset>
+
+    </section>
+</form>
+</aside>
+
+</body>
+</html>
