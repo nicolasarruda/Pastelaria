@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pastéis Relapsos</title>
-    <link rel="stylesheet" href="_css/estilo2.css"/>
+    <link rel="stylesheet" href="_css/estilo3.css"/>
     <script language="JavaScript" src="_javascript/funcoes.js"></script>
 </head>
 <body>
@@ -15,7 +15,7 @@
 
 <center><h1>Dados da Compra</h1><br><br>
 
-<form name="cadastro">
+<form name="cadastro" method="POST" action="">
     <?php
     date_default_timezone_set('America/Sao_Paulo');
     $mes = date("m");
@@ -65,7 +65,7 @@
     
    <p>Nome do cliente:<input type="text" name="nome" value=""></p> 
    <br><br>
-   <p>Pastéis selecionados:</p><br> 
+   <h3>Pastéis selecionados:</h3><br><br> 
 <?php $link = "pasteis.xml";
     $xml = simplexml_load_file($link) -> pasteis;
 
@@ -73,56 +73,46 @@ foreach($xml -> sabores as $aula){
 
 if($_POST[utf8_decode($aula -> codigo)]!=0){
      $num1 = $_POST[utf8_decode($aula -> codigo)];
-     echo "<center>".$num1 . "x Pastel (éis) do sabor: <strong>" .utf8_decode($aula -> nome) . "</strong></center><br/>";
+     $num3 = ($aula -> preco);
+     echo "<center>".$num1 . "x Pastel (éis) do sabor: <strong>" .utf8_decode($aula -> nome) . "</strong> Preço unitário: " . utf8_decode($num3) . "</center><br>";
+     
+      }
    }
-}
+   
      if(isset($_POST['final'])){
    $num2 = $_POST['final'];
    echo "Preço da compra: R$ ".$num2;
-
-
+   }
+?>
+<br>
+<br>
+<h3>Forma de pagamento:</h3><br><br>
    
-   }
-?>
-<br>
-<br>
-   <p>Forma de pagamento:</p><br>
-   <input type="radio" name="Opcoes" checked value = "Cartao"> Cartão de débito / crédito 
-   <br><br>
-   <div id = "radio1">
-<?php     
-   if(isset($_POST['final'])){
-    $num2 = $_POST['final'];
-    echo "Preço da compra: R$ ".$num2;
-   }
-?>
-    </div>
-  <input type="radio" name="Opcoes" value="Boleto">Boleto
-  <br><br>
-  <div id = "radio2">
-<?php
-    if(isset($_POST['final'])){
-        $num2 = $_POST['final'];
-        echo "Preço da compra: R$ ".$num2;
-    }
-?>
-   </div>
-  <input type="radio" name="Opcoes" value="Dinheiro">Dinheiro
-  <br><br>
-   <div id="radio3">
-       <br>
-<?php
-    if(isset($_POST['final'])){
-        $num2 = $_POST['final'];
-        echo "Preço da compra: R$ ".$num2."<br>";
-       }
-       echo "Digite o valor que deseja pagar:"; 
-       echo '<input type="number" readonly name="troco" min="0" max="1000" value="0"><br><br>';
-       echo "Seu troco:";
-?>
-</div>
-<br><br>
-<h3>Validade do pedido:</h3><br><br>
+   <ul style="margin-left: 35%;" class="payment-methods">
+  <li class="payment-method cartao">
+    <input name="payment_methods" type="radio" id="cartao">
+    <label for="cartao" style="background-image:url('_imagens/cartao.jpg');"></label>
+  </li>
+
+  <li class="payment-method boleto">
+    <input name="payment_methods" type="radio" id="boleto">
+    <label for="boleto" style="background-image:url(_imagens/boleto.jpg);"></label>
+  </li>
+
+  <li class="payment-method dinheiro">
+    <input name="payment_methods" type="radio" id="dinheiro">
+    <label for="dinheiro" style="background-image:url(_imagens/dinheiro.jpg);"></label>
+  </li>
+</ul>
+  
+<br><br><br><br><br><br><br>
+
+
+<h3>Deseja receber nossa newsletter com promoções?</h3>
+<input type="checkbox" name="opcao1" value="sim">Sim <br>
+<input type="checkbox" name="opcao2" value="nao">Não <br>
+
+<h3>Validade do pedido:</h3><br>
 
 <?php
 date_default_timezone_set('America/Sao_Paulo');
@@ -172,7 +162,11 @@ echo "Válido até: " . date(" d") . " de " . $mes . " de " . date(" Y ") . date
 
 
 ?>
- 
+<br><br><br>
+
+<input type="submit" value="Gerar boleto" name="gerarboleto">
+
+<br><br>
 
 </form>
 

@@ -137,23 +137,26 @@ table#listapastel img {
 ////// Radiobutton compra1.php /////
 */
 
-input[type=radio]:checked ~ #radio1{
-    display: block;
-}
-#radio1 {
-    display: none;
-}
-
-input[type=radio]:checked ~ #radio2{
-    display: block;
-}
-#radio2 {
-    display: none;
-}
-
-input[type=radio]:checked ~ #radio3{
-    display: block;
-}
-#radio3 {
-    display: none;
-}
+.payment-methods {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .payment-methods:after {
+    content: "";
+    clear: both;
+  }
+  
+  .payment-method {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    height: 70px;
+    position: relative;
+    width: 120px;
+  }
+  
+  .payment-method + .payment-method {
+    margin-left: 25px;
+  }

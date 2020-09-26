@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #ffA500;
+    color: rgba(0, 0, 0, 1);
+}
+header#cabecalho img#icone1{
+    position: absolute;
+    right: 500px;
+    top: 30px;
+}
+
+header#cabecalho img#icone2{
+    position: absolute;
+    right: 710px;
+    top: 30px;
+}
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 200px;
+    background-color:#ffffff;
+}
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    margin-top: 0px;
+}
+
+.payment-methods {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .payment-methods:after {
+    content: "";
+    clear: both;
+  }
+  
+  .payment-method {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    height: 70px;
+    position: relative;
+    width: 120px;
+  }
+  
+  .payment-method + .payment-method {
+    margin-left: 25px;
+  }
+
+  .payment-method label {
+    background: #fff no-repeat center center;
+    bottom: 1px;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    text-indent: 100%;
+    top: 1px;
+    white-space: nowrap;
+  }
+  
+  .cartao label {
+    background-image: url('_imagens/cartao.jpg');
+  }
+  
+  .boleto label {
+    background-image: url("_imagens/boleto.jpg");
+  }
+  
+  .dinheiro label {
+    background-image: url("_imagens/dinheiro.jpg");
+  }
+
+  .payment-methods input:focus + label {
+    outline: 2px dotted #21b4d0;
+  }
+
+  .payment-methods input:checked + label {
+    outline: 4px solid #21b4d0;
+  }
+
+  .payment-methods input:checked + label:after {
+    bottom: -10px;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    width: 20px;
+  }
+
+  @-moz-document url-prefix() {
+    .payment-methods input:checked + label:after {
+      bottom: 0;
+      right: 0;
+      background-color: #21b4d0;
+    }
+  }

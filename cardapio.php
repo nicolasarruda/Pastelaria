@@ -54,6 +54,9 @@ echo "</tr>";
 
 <input type="number" name="final" min="0"  value ="0" readonly/>
 <input type="submit" name="submeter" value = "Finalizar"/>
+<br><br>
+<input type="reset" name="resetar" value="Limpar">
+
 </form>
 </center>
 </body>
