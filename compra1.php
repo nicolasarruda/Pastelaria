@@ -87,18 +87,22 @@ if(isset($_POST['payment_methods'])){
    
     if(isset($_POST['final'])){
         $num2 = $_POST['final'];
-        echo "Preço da compra com desconto: R$ ".$num2 * 0.95."<br><br>";
+        $num2 = $num2 * 0.95;
+        $num2 = number_format($num2,2,",","");
+        echo "Preço da compra com desconto: R$ ".$num2."<br><br>";
         }
     } else if($payment == "boleto") {
         echo "<h5>BOLETO<h5>";
         if(isset($_POST['final'])){
         $num2 = $_POST['final'];
+        $num2 = number_format($num2,2,",","");
         echo "Preço da compra sem desconto: R$ ".$num2."<br><br>";
     }
    } else {
        echo "<h5>CARTÃO<h5>";
        if(isset($_POST['final'])){
         $num2 = $_POST['final'];
+        $num2 = number_format($num2,2,",","");
         echo "Preço da compra sem desconto: R$ ".$num2."<br><br>";
    }
    } 
@@ -153,7 +157,7 @@ if(isset($_POST['payment_methods'])){
             $num3 = ($aula -> preco);
         $pastel = $num1 . "x Pastel (éis) do sabor:" .utf8_decode($aula -> nome);
             fwrite($fp,$pastel.PHP_EOL);
-        $pastelpreco = "Preço unitário: " . utf8_decode($num3);
+        $pastelpreco = "Preço unitário: R$" . utf8_decode($num3);
             fwrite($fp,$pastelpreco.PHP_EOL);
         }
       }
@@ -166,19 +170,26 @@ if(isset($_POST['payment_methods'])){
    
     if(isset($_POST['final'])){
         $num2 = $_POST['final'];
-        $precototal =  "Preço da compra com desconto: R$ ".$num2 * 0.95."<br><br>";
+        $descontinho = $num2*0.05;
+        $descontinho = number_format($descontinho, 2, ',', '');
+        $valordesconto = "Valor do desconto: R$ ".$descontinho;
+        $num2 = $num2*0.95  ;
+        $precototal =  "Preço da compra com desconto: R$ ".number_format($num2,2,",","");
+        fwrite($fp,$valordesconto.PHP_EOL); 
         }
     } else if($payment == "boleto") {
         $pagamento = "Forma de pagamento: BOLETO";
         if(isset($_POST['final'])){
         $num2 = $_POST['final'];
-        $precototal = "Preço da compra sem desconto: R$ ".$num2."<br><br>";
+        $precoquack = number_format($num2,2,",","");
+        $precototal = "Preço da compra sem desconto: R$ ".$precoquack;
     }
    } else {
        $pagamento = "Forma de pagamento: CARTÃO";
        if(isset($_POST['final'])){
         $num2 = $_POST['final'];
-        $precototal =  "Preço da compra sem desconto: R$ ".$num2."<br><br>";
+        $precoquack = number_format($num2,2,",","");
+        $precototal =  "Preço da compra sem desconto: R$ ".$precoquack;
    }
    } 
 }

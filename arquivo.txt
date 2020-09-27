@@ -1,16 +1,12 @@
-Horário do pedido:  27 de setembro de  2020 04:46:38
+Horário do pedido:  27 de setembro de  2020 11:53:56
 Válido até:  27 de setembro de  2020 23:59:59
-Nome do cliente: Nícolas Luchini de Arruda
+Nome do cliente: asdasd
 Pastel selecionado(s):
-2x Pastel (éis) do sabor: CARnELAPSO Especial 
-Preço unitário:  8,00 
-2x Pastel (éis) do sabor: CALAPSOmARÃO 
-Preço unitário:  12,00 
-2x Pastel (éis) do sabor: FRAngLAPSO 
-Preço unitário:  8,00 
-3x Pastel (éis) do sabor: RELAPchEESE 
-Preço unitário:  10,00 
-6x Pastel (éis) do sabor: CaLaBreSaRELApsA 
-Preço unitário:  8,00 
+1x Pastel (éis) do sabor: CARnELAPSO Especial 
+Preço unitário: R$ 8,00 
+1x Pastel (éis) do sabor: CALAPSOmARÃO 
+Preço unitário: R$ 12,00 
+Valor do desconto: R$ 1,00
 Forma de pagamento: DINHEIRO
-Preço da compra com desconto: R$ 127.3<br><br>
+Preço da compra com desconto: R$ 19,00
+O cliente deseja receber nossa newsletter
