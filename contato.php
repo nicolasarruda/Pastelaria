@@ -14,7 +14,7 @@
     <nav id="menu">
         <ul>
             <li><a href="index.php"> Home </a></li>
-            <li><a href="index.php"> Sobre nós </a></li>
+            <li><a href="index1.php"> Sobre nós </a></li>
             <li><a href="contato.php">Contato</a></li>
             <li><a href="cardapio.php">Cardapio</a></li>
         </ul>
