@@ -1,12 +1,9 @@
-Horário do pedido:  27 de setembro de  2020 11:53:56
+Horário do pedido:  27 de setembro de  2020 13:06:57
 Válido até:  27 de setembro de  2020 23:59:59
-Nome do cliente: asdasd
+Nome do cliente: ads
 Pastel selecionado(s):
-1x Pastel (éis) do sabor: CARnELAPSO Especial 
+2x Pastel (éis) do sabor: CARnELAPSO Especial 
 Preço unitário: R$ 8,00 
-1x Pastel (éis) do sabor: CALAPSOmARÃO 
-Preço unitário: R$ 12,00 
-Valor do desconto: R$ 1,00
-Forma de pagamento: DINHEIRO
-Preço da compra com desconto: R$ 19,00
+Forma de pagamento: CARTÃO
+Preço da compra sem desconto: R$ 0,00
 O cliente deseja receber nossa newsletter

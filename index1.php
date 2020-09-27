@@ -14,45 +14,18 @@
     <nav id="menu">
         <ul>
             <li><a href="index.php"> Home </a></li>
+            <li><a href="index1.php"> Sobre nós </a></li>
             <li><a href="contato.php">Contato</a></li>
             <li><a href="cardapio.php">Cardapio</a></li>
         </ul>
     </nav>
 </header>
-<table id = "listapastel" style = "text-align: center;">
-    <form name = "quack">
-    <?php $link = "pasteis.xml";
-    $xml = simplexml_load_file($link) -> pasteis;
-    foreach($xml -> sabores as $aula){
-echo "<tr>";
-echo "<th>";
-echo "<font color = 'gray' size = '6pt'>". utf8_decode($aula -> nome)."</font><br/>";
-echo "<img src=' ".$aula -> imagem." '></img><br/>";
-echo "</th>";
-echo "<th>";
-echo "Ingredientes <br/> ".utf8_decode($aula -> ingredientes)."<br />";
-echo "</th>";
-echo "<th>";
-echo "Código do produto <br/>";
-echo utf8_decode($aula -> codigo3)."<br />";
-echo "R$:".utf8_decode($aula -> preco)."<br />";
-echo "</th>";
-echo "<th>";
-echo "Quantia <br/>";
-echo '<input type="number" name="'.$aula -> codigo.'" min="0" max="20" value ="0" onClick="calc_Preco();"/><br/>';
-echo "Preço Final Unitário <br/>";
-echo '<input type="number" name="'.$aula -> codigo2.'" min="0" max="20" value ="0" readonly/>';
-echo "</tr>";
-}
-    ?>
-</form>
-</table>
-<center>Preço Final:<br>
-    <form name = "precofinal">
-<input type="number" name="final" min="0"  value ="0" readonly/>
-<input type="submit" name="submeter" value = "Finalizar"/>
-</form>
-</center>
+<div class = "lanche">
+    <h1>Falimos a nossa lanchonete!</h1>
+</div>
+<div class = "pastelreviravolta">
+    <h1>Mas agora vendemos pastéis!</h1>
+    </div>
 </body>
     
 </html>

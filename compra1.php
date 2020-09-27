@@ -14,7 +14,6 @@
 <br>
 
 <center><h1>Dados do Pedido:</h1><br><br>
-
     <?php
     date_default_timezone_set('America/Sao_Paulo');
     $mes = date("m");
