@@ -1,0 +1,2 @@
+Dados do pedido:
+Horário do pedido:  27 de setembro de  2020 00:46:15Válido até:  27 de setembro de  2020 23:59:59Pastel selecionado(s):

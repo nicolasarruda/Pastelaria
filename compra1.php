@@ -243,7 +243,7 @@ echo "Válido até: " . date(" d") . " de " . $mes . " de " . date(" Y ") . date
     if($_POST[utf8_decode($aula -> codigo)]){
         $num1 = $_POST[utf8_decode($aula -> codigo)];
         if ($num1 !=0){
-            
+
         }
         $num3 = ($aula -> preco);
         $pastel = $num1 . "x Pastel (éis) do sabor:" .utf8_decode($aula -> nome). "<br>";
@@ -256,16 +256,14 @@ echo "Válido até: " . date(" d") . " de " . $mes . " de " . date(" Y ") . date
    echo "Preço da compra: R$ ".$num2;
    }
 
-
+    $linha = "Dados do pedido:";
     $fp = fopen("arquivo.txt", "w");
-    fwrite($fp,"Dados do pedido:");
-    fwrite('PHP_EOL', "\n");
-    fwrite($fp,$horariodopedido);
-    fwrite('PHP_EOL', "\n");
-    fwrite($fp,$horariovalidade);
-    fwrite('PHP_EOL', "\n");
-    fwrite($fp,$pastelselecionado);
-    fwrite('PHP_EOL', "\n");
+    fwrite($fp,$linha.PHP_EOL);
+    fwrite($fp,$horariodopedido.PHP_EOL);
+    fwrite($fp,$horariovalidade.PHP_EOL);
+    fwrite($fp,$pastelselecionado.PHP_EOL);
+    fwrite($fp,$pastel.PHP_EOL);
+    fwrite($fp,$pastepreco.PHP_EOL);
 
 
 
