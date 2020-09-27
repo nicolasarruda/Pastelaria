@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <array>
+	<data>
+		<cidade>Jundiaí</cidade>
 
+	</data>
 	<pasteis>
 		<sabores>
 
@@ -66,7 +69,7 @@
 		</sabores>
 		<sabores>
 
-			<nome> CaLabreSaRELAPSA </nome>
+			<nome> CaLaBreSaRELApsA </nome>
 			<preco> 8,00 </preco>
 			<codigo>cala</codigo>
 			<codigo2>cala1</codigo2>
@@ -83,7 +86,7 @@
 		</sabores>
 		<sabores>
 
-			<nome> RELAPSOinfaRtO </nome>
+			<nome> ReLApSOINfaRtO </nome>
 			<preco> 16,00 </preco>
 			<codigo>inf</codigo>
 			<codigo2>inf1</codigo2>
